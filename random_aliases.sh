@@ -15,6 +15,6 @@ alias phpinfo='echo "<?php phpinfo(); ?>" > info.php'
 flagclone (){ git clone git@bitbucket.org:flag_studio/$1.git; }
 
 # Linter aliases
-alias pcs='php-cs-fixer fix . --path-mode=intersection'
-alias pcsdiff='php-cs-fixer fix . --dry-run --diff --path-mode=intersection'
-alias pcsdry='php-cs-fixer fix . --dry-run --verbose --path-mode=intersection'
+alias pcs='vendor/bin/php-cs-fixer fix . --path-mode=intersection'
+alias pcsdiff='vendor/bin/php-cs-fixer fix . --dry-run --diff --path-mode=intersection'
+alias pcsdry='vendor/bin/php-cs-fixer fix . --dry-run --verbose --path-mode=intersection'
